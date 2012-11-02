@@ -157,7 +157,7 @@ describe "UserPages" do
     }
 
     describe "page" do
-      it { should have_selector('h1',    text: "Welcome to the Sample App") }
+      it { should have_selector('h1',    text: user.name) }
     end
   end
   
