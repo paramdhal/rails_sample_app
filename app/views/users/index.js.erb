@@ -1,1 +1,6 @@
-$("#users").html("<%= escape_javascript(render 'user_list') %>")
+{
+    "totalPages": "<%= @users.total_pages %>",
+    "content": "<%= escape_javascript(render @users) %>",
+    "selector": ".users"
+}
+
